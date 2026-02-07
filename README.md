@@ -32,7 +32,7 @@ Features I wish to refine / implement
 - Implementing powerups for player
 
 
-
+Thoughts on the project <br>
 
 Personally, I'm happy with the process of learning the different materials and importing 3D assets into Unity and getting them functional with the scenes. A lot of the beginning code, I was following
 from a Unity tutorial but I began implementing more of my own code for the 2nd scene and experimenting with things like bouncy surfaces. The bouncy balls were something interesting to work with and testing
