@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class SawRotation : MonoBehaviour {
 
+    //The bools are to tell which axis the saws are moving along and their speed.
     public bool xMovement = false;
     public bool zMovement = false;
     public float xSpeed = 0.5f;
@@ -11,6 +12,8 @@ public class SawRotation : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+
+        //This rotates the saws to make it look like they're spinning
         transform.Rotate(new Vector3(0, 90, 0) * Time.deltaTime );
 
         Vector3 currentPosition = transform.position;

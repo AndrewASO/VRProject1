@@ -6,8 +6,10 @@ using UnityEngine.InputSystem;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class PlayerController : MonoBehaviour
-{
+public class PlayerController : MonoBehaviour {
+
+    //All the public var's are to be changed or referenced for other things
+    //Some var's like speed, jumpforce, health, etc can be privated but will remain public for testing purposes.
     public float speed = 0;
     public float jumpForce = 5;
     public int health;
@@ -22,14 +24,14 @@ public class PlayerController : MonoBehaviour
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
+    void Start() {
         rb = GetComponent<Rigidbody>();
         score = 0;
 
         SetScoreText();
         winTextObject.SetActive(false);
 
+        //Initialize the player obj using the PlayerData.cs information
         health = PlayerData.HP;
         score = PlayerData.Score;
         
@@ -37,6 +39,7 @@ public class PlayerController : MonoBehaviour
 
     void Update() {
 
+        //Checks if the player falls into the void and if they do then their health is set to 0 as they've died
         if( transform.position.y <= -10) {
             health = 0;
         }
@@ -143,6 +146,7 @@ public class PlayerController : MonoBehaviour
     }
     */
 
+    //Probably not needed but will leave as clutter for now, might remove it later
     public int ReturnScore() {
         return score;
     }
