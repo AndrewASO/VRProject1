@@ -17,6 +17,8 @@ The game has the following features:
 - Audio for one trap currently
 - Camera following player movement
 
+
+
 Features I wish to refine / implement
 
 - For the dynamic traps, they will go askew when colliding against an object other than a flat wall so will be looking into how to keep them consistent
@@ -28,6 +30,9 @@ Features I wish to refine / implement
 - Learning more on how to properly implement vfx
 - Implementing abilities for enemies
 - Implementing powerups for player
+
+
+
 
 Personally, I'm happy with the process of learning the different materials and importing 3D assets into Unity and getting them functional with the scenes. A lot of the beginning code, I was following
 from a Unity tutorial but I began implementing more of my own code for the 2nd scene and experimenting with things like bouncy surfaces. The bouncy balls were something interesting to work with and testing
